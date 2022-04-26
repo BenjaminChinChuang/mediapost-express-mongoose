@@ -20,7 +20,7 @@ const {
 const postRouter = require('./routes/post')
 
 mongoose
-  .connect(LOCAL_DATABASE)
+  .connect(DATABASE)
   .then(() => console.log(`db connected`))
   .catch(error => console.log(error))
 
